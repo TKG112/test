@@ -26,9 +26,6 @@ public class NVGItem extends Item implements ICurioItem {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
-	/**
-	 * Ensures the NBT tag is initialized and returns it.
-	 */
 	private CompoundTag checkAndGetTag(ItemStack stack) {
 		if (!stack.hasTag()) {
 			stack.setTag(new CompoundTag());
@@ -36,33 +33,24 @@ public class NVGItem extends Item implements ICurioItem {
 		return stack.getTag();
 	}
 
-	/**
-	 * Updates the NVG mode based on the "NvgCheck" NBT tag.
-	 */
 	private void updateNVGMode(ItemStack stack) {
 		CompoundTag tag = stack.getOrCreateTag();
 		if (tag.contains("NvgCheck")) {
 			boolean nvgCheck = tag.getBoolean("NvgCheck");
 			tag.putInt("nvg_mode", nvgCheck ? ON : OFF);
 		} else {
-			tag.putInt("nvg_mode", OFF); // Default to OFF if "NvgCheck" is not present
+			tag.putInt("nvg_mode", OFF);
 		}
 	}
 
-	/**
-	 * Returns the current NVG mode (ON or OFF).
-	 */
 	public static int getNVGMode(ItemStack stack) {
 		CompoundTag tag = stack.getTag();
 		if (tag != null && tag.contains("nvg_mode")) {
 			return tag.getInt("nvg_mode");
 		}
-		return OFF; // Default to OFF if "nvg_mode" is not present
+		return OFF;
 	}
 
-	/**
-	 * Adds a tooltip to display the current NVG mode and state.
-	 */
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltip, @NotNull TooltipFlag flag) {
 		super.appendHoverText(stack, level, tooltip, flag);
@@ -76,14 +64,11 @@ public class NVGItem extends Item implements ICurioItem {
 		}
 	}
 
-	/**
-	 * Curios tick method: Updates NVG mode dynamically based on the "NvgCheck" tag.
-	 */
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
 		Entity entity = slotContext.entity();
 		if (entity instanceof LivingEntity livingEntity) {
-			return; // Only process on the server-side
+			return;
 		}
 		updateNVGMode(stack);
 	}

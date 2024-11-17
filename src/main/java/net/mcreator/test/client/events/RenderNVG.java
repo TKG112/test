@@ -35,7 +35,6 @@ public class RenderNVG {
             return;
         }
 
-        // Check for NVG item in Curios slots
         boolean hasNvgItem = false;
         boolean nvgOn = false;
         for (SlotResult slot : CuriosApi.getCuriosHelper().findCurios(player, TestModItems.NVG.get())) {
@@ -46,12 +45,10 @@ public class RenderNVG {
 
         float nightVisionEnabled = (hasNvgItem && nvgOn) ? 1.0f : 0.0f;
 
-        // Initialize the shader if not already initialized
         if (nvgShader == null) {
             initializeShader(mc);
         }
 
-        // Update the shader uniforms
         if (nvgShader != null) {
             updateShaderUniforms(nightVisionEnabled);
         }
@@ -98,9 +95,6 @@ public class RenderNVG {
         }
     }
 
-    /**
-     * Access the private `passes` field from PostChain using reflection.
-     */
     private static List<PostPass> getShaderPasses(PostChain postChain) {
         try {
             Field passesField = PostChain.class.getDeclaredField("passes");
