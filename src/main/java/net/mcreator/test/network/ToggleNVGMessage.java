@@ -52,7 +52,7 @@ public class ToggleNVGMessage {
 			return;
 		if (type == 0) {
 
-			ToggleNVGOnKeyPressedProcedure.execute(world, entity);
+			ToggleNVGOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
