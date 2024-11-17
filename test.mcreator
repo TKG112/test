@@ -1,0 +1,340 @@
+{
+  "mod_elements": [
+    {
+      "name": "RangefinderRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rangefinder_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/RangefinderRightclickedProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Rangefinder"
+    },
+    {
+      "name": "Rangefinder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rangefinder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/item/RangefinderItem.java",
+          "src/main/resources/assets/test/models/item/rangefinder.json"
+        ]
+      },
+      "path": "~/Rangefinder"
+    },
+    {
+      "name": "AAAAAA",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aaaaaa",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Backpack",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "backpack",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/item/backpack.json",
+          "src/main/java/net/mcreator/test/item/inventory/BackpackInventoryCapability.java",
+          "src/main/java/net/mcreator/test/item/BackpackItem.java"
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "BackpackGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/client/gui/BackpackGUIScreen.java",
+          "src/main/java/net/mcreator/test/world/inventory/BackpackGUIMenu.java"
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "OpenBackpack",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/network/OpenBackpackMessage.java"
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "OpenBackpackOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_backpack_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/OpenBackpackOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "BackpackGUIThisGUIIsClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack_gui_this_gui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/BackpackGUIThisGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "BackpackGUI2",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack_gui_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/world/inventory/BackpackGUI2Menu.java",
+          "src/main/java/net/mcreator/test/client/gui/BackpackGUI2Screen.java"
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "NVG",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nvg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/item/nvg.json",
+          "src/main/java/net/mcreator/test/item/NVGItem.java"
+        ]
+      },
+      "path": "~/NVG"
+    },
+    {
+      "name": "ToggleNVG",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_nvg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/network/ToggleNVGMessage.java"
+        ]
+      },
+      "path": "~/NVG"
+    },
+    {
+      "name": "ToggleNVGOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_nvg_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/ToggleNVGOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NVG"
+    },
+    {
+      "name": "NVGTGIncrease",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nvgtg_increase",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/network/NVGTGIncreaseMessage.java"
+        ]
+      },
+      "path": "~/NVG"
+    },
+    {
+      "name": "NVGTGDecrease",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nvgtg_decrease",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/network/NVGTGDecreaseMessage.java"
+        ]
+      },
+      "path": "~/NVG"
+    },
+    {
+      "name": "NVGTGDecreaseOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nvgtg_decrease_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/NVGTGDecreaseOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NVG"
+    },
+    {
+      "name": "NVGTGIncreaseOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nvgtg_increase_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/NVGTGIncreaseOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NVG"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "NVGCheck",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.test.nvg": "NVG",
+      "item_group.test.aaaaaa": "AAAAAA",
+      "key.categories.test": "Test",
+      "key.test.open_backpack": "Open Backpack",
+      "key.test.toggle_nvg": "Toggle NVG",
+      "key.test.nvgtg_decrease": "NVG Tube Gain Decrease",
+      "item.test.rangefinder": "Rangefinder",
+      "item.test.backpack": "Backpack",
+      "key.test.nvgtg_increase": "NVG Tube Gain Increase"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Rangefinder",
+        "children": []
+      },
+      {
+        "name": "Backpack",
+        "children": []
+      },
+      {
+        "name": "NVG",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "test",
+    "modName": "test",
+    "version": "1.0.0",
+    "author": "User, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "use_compiled_mods",
+      "curios_api",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.test"
+  },
+  "mcreatorVersion": 202400232117
+}

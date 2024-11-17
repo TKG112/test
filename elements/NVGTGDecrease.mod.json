@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "DOWN",
+    "keyBindingName": "NVG Tube Gain Decrease",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "NVGTGDecreaseOnKeyPressed"
+    }
+  }
+}

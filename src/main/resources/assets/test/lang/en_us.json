@@ -1,0 +1,11 @@
+{
+  "item.test.nvg": "NVG",
+  "item_group.test.aaaaaa": "AAAAAA",
+  "key.categories.test": "Test",
+  "key.test.open_backpack": "Open Backpack",
+  "key.test.toggle_nvg": "Toggle NVG",
+  "key.test.nvgtg_decrease": "NVG Tube Gain Decrease",
+  "item.test.rangefinder": "Rangefinder",
+  "item.test.backpack": "Backpack",
+  "key.test.nvgtg_increase": "NVG Tube Gain Increase"
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "UP",
+    "keyBindingName": "NVG Tube Gain Increase",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "NVGTGIncreaseOnKeyPressed"
+    }
+  }
+}
